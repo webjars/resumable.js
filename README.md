@@ -1,5 +1,5 @@
-WebJar for [Library]
+WebJar for resumable.js
 
 More info: http://webjars.org
 
-Upstream: [Library URL]
+Upstream: http://www.resumablejs.com
