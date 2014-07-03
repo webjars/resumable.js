@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>resumable.js</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Resumable.js</name>
     <description>WebJar for Resumable.js</description>
     <url>http://webjars.org</url>
@@ -19,7 +19,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>1.0</upstream.version>
-	<upstream.branch>v1.0</upstream.branch>
+	<upstream.branch>master</upstream.branch>
 	<upstream.url>https://github.com/23/resumable.js/archive/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
