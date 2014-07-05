@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>resumable.js</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <name>Resumable.js</name>
     <description>WebJar for Resumable.js</description>
     <url>http://webjars.org</url>
@@ -19,14 +19,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>1.0</upstream.version>
-	<upstream.branch>master</upstream.branch>
-	<upstream.url>https://github.com/23/resumable.js/archive/</upstream.url>
+        <upstream.url>https://github.com/23/resumable.js/archive/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
-                "paths": {
-                    "resumable": "resumable"
-                },
+                "paths": { "resumable": "resumable" }
             }
         </requirejs>
     </properties>
@@ -42,7 +39,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-	    <url>https://github.com/23/resumable.js/blob/master/MIT-LICENSE</url>
+            <url>https://github.com/23/resumable.js/blob/master/MIT-LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -71,7 +68,7 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>${upstream.branch}.zip</fromFile>
+                            <fromFile>v${upstream.version}.zip</fromFile>
                             <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
                         </configuration>
                     </execution>
@@ -91,7 +88,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/resumable.js-${upstream.version}" />
+                                    <fileset dir="${project.build.directory}/resumable.js-${upstream.version}" includes="resumable.js"/>
                                 </move>
                             </target>
                         </configuration>
