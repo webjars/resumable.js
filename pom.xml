@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>resumable.js</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <name>Resumable.js</name>
     <description>WebJar for Resumable.js</description>
     <url>http://webjars.org</url>
@@ -48,7 +48,7 @@
         <url>http://github.com/webjars/resumable.js</url>
         <connection>scm:git:https://github.com/webjars/resumable.js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/resumable.js.git</developerConnection>
-        <tag>resumable.js-1.1.0</tag>
+        <tag>v1.0.3</tag>
     </scm>
     
     <dependencies>
